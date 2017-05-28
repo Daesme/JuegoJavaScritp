@@ -329,7 +329,7 @@ function retroceder(){
 		
 	
 }
-
+//funcion Para mover
 function mover(event){
 	if(event.keyCode==38){
 			subir();		
@@ -421,6 +421,7 @@ function dibujar(){
         
 }
 
+//funcion que constantemente esta corriendo en el bicle
 function frame(){
 	dibujar();
          if (disparar==true) {                    
@@ -433,6 +434,7 @@ function frame(){
 //	destruirCactus();
                                
 }
+//inicio del juego
 function iniciar(){
 	modal.style.display = "none";
 	bucle = setInterval("frame()", velocidad);
